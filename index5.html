@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSX and Babel</title>
+    <style>
+        img{
+            width: 88.7%;
+            justify-content: center;
+            height: 356px;
+        }
+        .line{
+            padding-bottom: 15px;
+        }
+        #root{
+            margin: auto;
+            margin-left: 150px;
+        }
+        .col{
+            color: rgb(118, 132, 153);
+        }
+        h5{
+            color: rgb(214, 159, 47);
+        }
+        li>span{
+            color: rgb(26, 32, 43)
+        }
+        ul>li{
+            color: rgb(70, 75, 84);
+        }
+        ul{
+            list-style-type: none;
+        }
+        .flex{
+            display: flex;
+        }
+        button{
+            width: 100%;
+            background: #000;
+            color: #ffff;
+            height: 35px;
+        }
+        .space{
+            text-align: center;
+        }
+       
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function App(){
+            return(
+                <>
+                <img src="Screenshot 2024-07-30 235945.png" alt=""/>
+                <span>
+                    <h1>Automatic Watch</h1>
+                    <p className="line">$350.00 USd</p>
+                </span>
+                
+                
+                <p className="col">Lorem ipsum dolor sit amet consectetur adipisicing elitr, sed diam nonumy eirmod tempor invidunt ut labore </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, neque ullam. Aut voluptatum quidem tempore explicabo quas iusto provident dolorum ipsam aliquid temporibus, asperiores exercitationem totam saepe aspernatur sequi veritatis.</p>
+                <br/>
+                <hr/>
+                <br/>
+                <h5>FEATURES</h5>
+                <ul className="flex">
+                    <ul>
+                        <li>Chronograph</li>
+                        <li>Master Chronometer</li>
+                        <li>Teachymeter</li>
+                    </ul>
+                    <ul>
+                        <li>Anti-magnatic</li>
+                        <li>Chronometer</li>
+                        <li>Small seconds</li>
+                    </ul>
+                </ul>
+                    
+                
+                <h5>PRODUCT DETAILS</h5>
+                <ul>
+                    <li><span>Between lugs</span>: 20 mm</li>
+                    <li><span>Bracelet:</span>leather strap</li>
+                    <li><span>Case:</span>Steel</li>
+                    <li><span>Case diameter:</span>42 mm</li>
+                    <li><span>Dial color:</span>Black</li>
+                    <li><span>Crystal</span>Domed , scratch - resistance sappjire crystal with anti-reflective treatment inside</li>
+
+                    <li><span>Water resistance:</span>(50 meters / 467 feet)</li>
+
+
+                </ul>
+                <br/>
+                <button>ADD TO CART</button>
+                <br/>
+                <p className="space">2-3 business days delivery</p>
+
+
+
+
+                </>
+            );
+        };
+        let r= ReactDOM.createRoot(document.getElementById("root"));
+        r.render(<App />)
+
+    </script>
+  </body>
+</html>
